@@ -24,7 +24,7 @@ tokenized_text = tokenizer.encode(t5_prepared_Text, return_tensors="pt").to(devi
 summary_ids = model.generate(tokenized_text,
                                     num_beams=4,
                                     no_repeat_ngram_size=2,#no_repeat_ngram_size=2 so that no 2-gram appears twice:
-                                    min_length=150,
+                                    min_length=180,
                                     max_length=1200,
                                     early_stopping=True)
 
