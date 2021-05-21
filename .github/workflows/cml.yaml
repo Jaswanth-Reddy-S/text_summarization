@@ -12,7 +12,7 @@ jobs:
               repo_token: ${{ secrets.GITHUB_TOKEN }}
           run: |
               pip install -r requirements.txt
-              python T5 -transformer- text summarization (1).py
+              python train.py
               
               echo "## Model metrics" > report.md
               cat output >> report.md
