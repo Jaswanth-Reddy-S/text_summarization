@@ -14,7 +14,5 @@ jobs:
               pip install -r requirements.txt
               python T5 -transformer- text summarization (1).py
               
-              echo "## Model metrics" > report.md
-              cat output >> report.md
               
               cml-send-comment report.md
